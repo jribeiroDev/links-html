@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body * {
+  font-family: "Roboto", sans-serif;
+  color: #806b61;
+}
+
+/* #background {
+  background: rgb(0, 0, 0);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.6;
+  object-fit: cover;
+  position: fixed;
+} */
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  background-size: cover;
+  top: 0;
+  z-index: -1;
+}
+
+video {
+  opacity: 0.8;
+}
+
+#container {
+  width: 360px;
+  /* border: 2px solid red; */
+  margin: 56px auto;
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 180px;
+}
+
+#profile p {
+  line-height: 24px;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+/* Links */
+ul {
+  list-style: none;
+  padding: 24px 0;
+}
+
+#title {
+  font-size: 16px;
+  justify-content: center;
+  grid-area: title;
+}
+
+#code {
+  display: flex;
+  justify-content: right;
+  margin-top: -10px;
+  grid-area: text;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+ul li a {
+  display: grid;
+  grid-template:
+    "img title title"
+    "text text text";
+  justify-content: center;
+  align-items: center;
+  padding: 16px 24px;
+  margin: 0px auto 16px;
+  text-decoration: none;
+  background: rgba(252, 243, 229, 0.65);
+  border: 2px solid #806b61;
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background: rgba(252, 243, 229, 1);
+  border: 2px solid #806b61;
+  transition: transform 0.2s;
+}
+
+ul li img {
+  display: flex;
+  grid-area: img;
+  justify-content: center;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+
+#social-links {
+  display: flex;
+  margin-bottom: 40px;
+  font-size: 26px;
+  justify-content: center;
+}
+
+#social-links a {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: rgba(252, 243, 229, 0.6);
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
