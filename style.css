@@ -132,5 +132,11 @@ ul li img {
 footer {
   padding: 24px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
+  color: white;
+}
+
+footer span{
+  color: white;
+  font-size: 16px;
 }
