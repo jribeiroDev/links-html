@@ -77,11 +77,7 @@ ul {
 }
 
 ul li a {
-  display: grid;
-  grid-template:
-    "img title title"
-    "text text text";
-  justify-content: center;
+  display: flex;
   align-items: center;
   padding: 16px 24px;
   margin: 0px auto 16px;
@@ -92,6 +88,24 @@ ul li a {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   transition: background 0.2s;
+}
+
+#empty {
+  justify-content: center;
+}
+
+#text {
+  margin: 10px;
+  justify-content: left;
+}
+
+#text-low {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+p {
+  justify-content: center;
 }
 
 ul li a:hover {
