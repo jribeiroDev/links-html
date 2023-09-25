@@ -26,11 +26,13 @@ body * {
   left: 0;
   background-size: cover;
   top: 0;
+  opacity: 0.6;
   z-index: -1;
 }
 
 /* video {
   opacity: 0.8;
+  background-color: black;
 } */
 
 #container {
@@ -97,7 +99,7 @@ ul li a {
 
 #text {
   margin: 10px;
-  justify-content: left;
+  margin-left: 30px;  justify-content: left;
 }
 
 #text-low {
